@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recon Lab | RK Robiul Haker</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #05080b;
+            color: #eafff2;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 22px;
+            background: #0a1117;
+            border-bottom: 1px solid #19ff7a;
+        }
+
+        h1 {
+            color: #19ff7a;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .box {
+            background: #0b1319;
+            border: 1px solid #153a27;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            box-sizing: border-box;
+            background: #05080b;
+            color: white;
+            border: 1px solid #19ff7a;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 13px 20px;
+            background: #08100d;
+            color: #19ff7a;
+            border: 1px solid #19ff7a;
+            border-radius: 8px;
+        }
+
+        #result {
+            margin-top: 15px;
+            color: #19ff7a;
+        }
+
+        a {
+            color: #19ff7a;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔎 Recon Lab</h1>
+    <p>RK Robiul Haker • White Hat Cyber Lab</p>
+</header>
+
+<main>
+
+    <div class="box">
+        <h2>Authorized Lab</h2>
+
+        <p>
+            এখানে শুধু নিজের ডিভাইস বা অনুমোদিত practice lab ব্যবহার করো।
+        </p>
+
+        <input
+            id="target"
+            placeholder="Example: my-lab.local"
+        >
+
+        <button onclick="checkTarget()">
+            Check Lab Target
+        </button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="box">
+        <h2>📚 Recon শেখার বিষয়</h2>
+
+        <p>• Domain ও subdomain কী</p>
+        <p>• IP address কী</p>
+        <p>• DNS কীভাবে কাজ করে</p>
+        <p>• HTTP headers কী</p>
+        <p>• Public information কীভাবে নিরাপদভাবে বিশ্লেষণ করা হয়</p>
+    </div>
+
+    <p>
+        <a href="index.html">← Dashboard-এ ফিরে যাও</a>
+    </p>
+
+</main>
+
+<script>
+
+function checkTarget() {
+
+    const target = document.getElementById("target").value.trim();
+    const result = document.getElementById("result");
+
+    if (!target) {
+        result.textContent = "⚠️ আগে একটি lab target লিখো।";
+        return;
+    }
+
+    result.textContent =
+        "✅ Lab target added: " + target +
+        " — কোনো scan করা হয়নি।";
+}
+
+</script>
+
+</body>
+</html>

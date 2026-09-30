@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #05080b;
+    color: #eafff2;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    padding: 22px;
+    background: #0a1117;
+    border-bottom: 1px solid #19ff7a;
+}
+
+.logo {
+    color: #19ff7a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 7px 0 0;
+    color: #789488;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Welcome */
+
+.welcome {
+    padding: 25px;
+    background: #0b1319;
+    border: 1px solid #153a27;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    color: #19ff7a;
+    margin-top: 0;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #0b1319;
+    border: 1px solid #153a27;
+    border-radius: 15px;
+    padding: 22px;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #19ff7a;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.card h2 {
+    color: #19ff7a;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.card p {
+    color: #91a99c;
+}
+
+/* Tools */
+
+.tools {
+    margin-top: 25px;
+    padding: 22px;
+    background: #0b1319;
+    border: 1px solid #153a27;
+    border-radius: 15px;
+}
+
+.tools h2 {
+    color: #19ff7a;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background: #08100d;
+    color: #19ff7a;
+    border: 1px solid #19ff7a;
+    padding: 13px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #19ff7a;
+    color: #05080b;
+}
+
+/* Terminal */
+
+.terminal {
+    margin-top: 25px;
+    background: #020504;
+    border: 1px solid #153a27;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.terminal-title {
+    padding: 12px;
+    background: #0d1511;
+    color: #aaa;
+}
+
+.terminal-title span {
+    color: #19ff7a;
+}
+
+.terminal-body {
+    padding: 20px;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+.green {
+    color: #19ff7a;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #60776b;
+}
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
